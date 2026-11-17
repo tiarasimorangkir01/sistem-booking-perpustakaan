@@ -287,17 +287,13 @@ export default function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [currentUser, setCurrentUser] = useState({
-    nim: "2310511042",
-    nama: "Nadia Putri",
-    email: "2310511042@mahasiswa.upnvj.ac.id",
-    fakultas: "Ilmu Komputer",
   });
   const [activeMenu, setActiveMenu] = useState("home");
 
   // Mode Form Auth: 'login' | 'register' | 'forgot'
   const [authMode, setAuthMode] = useState("login");
-  const [nim, setNim] = useState("2310511042");
-  const [password, setPassword] = useState("12345678");
+  const [nim, setNim] = useState("");
+  const [password, setPassword] = useState("");
   const [namaLengkap, setNamaLengkap] = useState("");
   const [emailInput, setEmailInput] = useState("");
   const [otpCode, setOtpCode] = useState("");
